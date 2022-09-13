@@ -20,17 +20,19 @@ export default function save({attributes}) {
 	const { content, align, type} = attributes;
 
 	return (
+
 		<RichText.Content
 			{ ...blockProps }
 
 			className={"alert alert-dismissible alert-" + type}
 			role="alert"
 			tagName="div"
-			multiline="p" 
+			multiline="p"
 			value={ content }
 			style={ { textAlign: align, type:type } }
-
 		/>
+
+
 	);
 }
 
