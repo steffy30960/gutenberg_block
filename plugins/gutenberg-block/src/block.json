@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/gutenberg-block",
+	"version": "0.1.0",
+	"title": "Gutenberg Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "bloc d'alerte",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenberg-block",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"type": {
+			"type":"string",
+			"default": "primary"
+		}
+
+
+
+	},
+
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
